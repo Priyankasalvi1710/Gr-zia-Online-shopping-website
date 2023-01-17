@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left:0;
+}
+.navbarr{
+    background: white;
+    text-align: center;
+}
+.navbarr ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(9, 9, 9);
+}
+.navbarr ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.navbarr ul li a{
+    text-decoration: none;
+    color: #171717;
+}
+.active, .navbarr ul li:hover{
+    background: palevioletred;
+    border-radius: 3px;
+}
+.navbarr.fa{
+    margin-right: 8px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.navbarr ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background: palevioletred;
+    margin-top: 15px;
+    margin-left: -15px;
+} 
+.navbarr ul li:hover .sub-menu ul{
+    display: inline-table;
+    margin: 10px;
+}
+.navbarr ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navbarr ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.navbarr ul li:hover .sub-menu ul li a:hover{
+    color: lightsalmon;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-1{
+    display: none;
+}
+.hover-me:hover .sub-menu-1{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: palevioletred;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{
+    width: 600px;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none ;
+    color: #555;
+}
+p{
+    color: #555;
+}
+
+
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: sticky;
+}
+.row{
+   background-image: url("image/bannner.jpg");
+   height: 50vh;
+   width: 100%;
+   background-size: cover;
+   backgroud-position: top 25% right 0;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-item: flex-start;
+   justify-content: center;
+}
+
+.collection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.collection.men-collection{
+    width: 49%;
+    height: 200px;
+    background-size: contain;
+    text-align: middle;
+    line-height: 36px;
+    padding: 20px 40px;
+    
+}
+.collection.women-collection{
+    width: 49%;
+    height: 200px;
+    background-size: cover;
+    text-align: middle;
+    line-height: 36px;
+    padding: 20px 40px;
+    
+}
+
+.collection.kids-collection{
+    width: 49%;
+    height: 200px;
+    background-size: cover;
+    text-align: middle;
+    line-height: 36px;
+    padding: 20px 40px;   
+}
+.collection.accessories-collection{
+    width: 49%;
+    height: 200px;
+    background-size: cover;
+    text-align: middle;
+    line-height: 36px;
+    padding: 20px 40px;
+    
+}
+.men-collection h2{
+    width: 200px;
+    font-size: 24px;
+    color: black;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.women-collection h2{
+    width: 200px;
+    font-size: 24px;
+    color: black;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.kid-collection h2{
+    width: 200px;
+    font-size: 24px;
+    color: black;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.accessories-collection h2{
+    width: 200px;
+    font-size: 24px;
+    color: black;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.festive-deal{
+    background-color: whitesmoke ;
+    width: auto;
+    padding: 30px;
+    border: #383838;
+}
+
+.festive-deal1 h1{
+
+    color: palevioletred;
+
+}
+
+.brand-sale{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(91, 3, 91);
+    overflow: auto;
+    
+}
+
+.brands{
+    float: left;
+    width: 300px;
+    padding-left: 50px;
+    
+}
+.brands img{
+    width: 100%;
+    height: auto;
+  
+}
+
+.brand-sale .brands .little-text{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: double;
+
+    
+}
+
+.brand-sale h1{
+    color: rgb(214, 198, 80);
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-style: oblique;
+    font-size: 300%;
+}
+.heading{
+    text-align: center;
+    color: rgb(214, 198, 80);
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-style: oblique;
+    font-size: 300%;
+}
+
+.Saree-deal{
+   background-color: rgb(3, 49, 3);
+   max-width: 200%;
+   margin: auto;
+   overflow: auto;
+}
+
+.saree-img {
+  float: left;
+    width: 300px;
+    padding-left: 50px;
+}
+
+.saree-img img{
+  width: 100%;
+    height: auto;
+}
+
+.Saree-deal .saree-img .deal-text{
+  color: rgb(249, 249, 253);
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: double;
+}
+
+.heading1{
+  text-align: center;
+  color: rgb(214, 198, 80);
+  padding-top: 30px;
+  padding-bottom: 0px;
+  font-style: oblique;
+  font-size: 300%;
+}
+
+.kids-deal{
+ background-color: rgb(3, 49, 3);
+ max-width: 200%;
+ margin: auto;
+ overflow: auto;
+}
+
+.kids-img {
+float: left;
+  width: 300px;
+  padding-left: 50px;
+}
+
+.kids-img img{
+width: 100%;
+  height: auto;
+}
+
+.kids-deal .kids-img .deal-text{
+color: rgb(249, 249, 253);
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: double;
+}
+
+.heading2{
+  text-align: center;
+  color: rgb(214, 198, 80);
+  padding-top: 30px;
+  padding-bottom: 0px;
+  font-style: oblique;
+  font-size: 300%;
+}
+
+.mens-deal{
+ background-color: rgb(3, 49, 3);
+ max-width: 200%;
+ margin: auto;
+ overflow: auto;
+}
+
+.mens-img {
+float: left;
+  width: 300px;
+  padding-left: 50px;
+}
+
+.menss-img img{
+width: 100%;
+  height: auto;
+}
+
+.mens-deal .mens-img .deal-text{
+color: rgb(249, 249, 253);
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: double;
+}
+.Footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100Px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+font-weight: 300;
+margin-bottom: 30px;
+letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+}
